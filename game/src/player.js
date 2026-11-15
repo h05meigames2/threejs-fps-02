@@ -132,12 +132,12 @@ export class Player {
       }
       this.bobPhase += dt * speed2D * 1.9;
     }
-    this.syncWeaponVisual();
+    this.syncWeaponVisual(dt);
     this.updateCamera(dt);
     this.syncHitMeshes();
   }
 
-  syncWeaponVisual() {
+  syncWeaponVisual(dt) {
     const ws = currentWeapon(this);
     if (ws.key !== this.shownWeaponKey) {
       for (const key of Object.keys(this.gunGroups)) this.gunGroups[key].visible = key === ws.key;

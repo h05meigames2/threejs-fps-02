@@ -117,10 +117,14 @@ if (shotMode) {
     game.round.buyItem('carbine');   // still in the buy phase: purchases are legal here
     game.round.buyItem('armor');
     game.round.endBuy();
-    p.pos.set(-6, 0, 16);
+    // On the catwalk deck's west end, looking east-south-east along the deck: the
+    // catwalk guard crosses the frame, the mid-south crossing and the B lane run
+    // through the lower right, and the Breaker push develops there at distance —
+    // a live lane view that keeps the posed rifleman out of point-blank traffic.
+    p.pos.set(-11, 3, 7.5);
     p.vel.set(0, 0, 0);
-    game.input.face(0.35, -0.02);
-    p.frozen = true;               // a posed rifleman at mid-south, bots fighting around him
+    game.input.face(-1.81, -0.11);
+    p.frozen = true;               // a posed rifleman on the catwalk, bots fighting below
   } else if (shotMode === 'end') {
     game.round.score = [6, 4];
     game.round.round = 11;
