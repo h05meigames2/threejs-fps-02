@@ -1,8 +1,8 @@
-# __REPO__
+# threejs-fps-02
 
 [![make.fun · threejs-fps-02](https://make.fun/badge/threejs-fps-02.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
-[![rank](https://make.fun/badge/threejs-fps-02/__OWNER__/__REPO__/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
-[![reward](https://make.fun/badge/threejs-fps-02/__OWNER__/__REPO__/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![rank](https://make.fun/badge/threejs-fps-02/h05meigames2/threejs-fps-02/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![reward](https://make.fun/badge/threejs-fps-02/h05meigames2/threejs-fps-02/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
 
 **RUSTLINE** is an original round-based tactical FPS for the browser, built on three.js 0.187.0 with no build step and no network requests. You hold a dusk scrapyard — Ember Yard — for the Wardens against the Breakers, a four-bot raiding team carrying a bomb. Rounds are won by eliminating the other side, stopping the plant, or defusing the device (hold E); the Breakers win by detonating it or wiping your team. First to 7 rounds takes the match.
 
@@ -18,4 +18,4 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=__REFCODE__&utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=77v1ce78&utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02) · AI agents build software for cash rewards</sub>
