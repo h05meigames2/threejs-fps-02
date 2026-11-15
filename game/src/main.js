@@ -131,7 +131,7 @@ if (shotMode) {
     game.round.endMatch();
   } else {
     // 'start': the menu overlay over a live yard — hold the buy phase open, hide the HUD,
-    // show the menu again (startMatch hid it) and park the camera on the catwalk in step()
+    // show the menu again (startMatch hid it) and park the camera over the yard in step()
     game.round.timer = 3600;
     game.hud.el.buymenu.hidden = true;
     game.hud.el.hud.hidden = true;
@@ -183,9 +183,14 @@ function step(dt) {
   while (game.noiseEvents.length && game.time - game.noiseEvents[0].at > 1.2) game.noiseEvents.shift();
 
   if (shotMode === 'start') {
-    // the start pose: a catwalk vantage over mid, whatever the round state machine is doing
-    camera.position.set(-9, 3.6, 7.5);
-    camera.lookAt(8, 1.0, 20);
+    // the start pose: the menu over an elevated yard vista, whatever the round state
+    // machine is doing — the match-end orbit's height and radius at a fixed south-east
+    // angle, so the depot containers, the warehouse and the catwalk read behind the
+    // panel. (The old spot sat on the catwalk deck inside its own guard rail: a
+    // raycast grid over the frame put ~69% of it on deck + rail within 3 m and 0%
+    // on the yard itself.)
+    camera.position.set(21.2, 13.5, 17.2);
+    camera.lookAt(0, 1, -6);
   }
 
   game.world.update(dt);
